@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node ./src/server.ts",
+    "dev": "nodemon --exec 'ts-node --cache-directory .tscache' server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-ts": "tsc -w",
     "build-ts": "tsc"
@@ -19,7 +21,8 @@
     "mongoose": "^5.0.0-rc0",
     "morgan": "^1.9.0",
     "nodemailer": "^4.4.1",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "ts-node": "^4.1.0"
   },
   "devDependencies": {
     "@types/dotenv": "^4.0.2",
